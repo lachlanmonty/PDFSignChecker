@@ -62,6 +62,7 @@ class MainWindow(qtw.QMainWindow):
 
         self.df_raw = loop_sign_check(self.file_names)
         self.df_tidy = self.df_raw.explode("missing_signature")
+        self.df_tidy = self.df_tidy[self.df_tidy["missing_signature"] != "-"]
         self.df_tidy = self.df_tidy[["file", "results", "missing_signature"]]
         self.df_o = self.df_raw[["file", "results", "missing_who"]]
         
