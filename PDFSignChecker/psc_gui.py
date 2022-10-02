@@ -23,13 +23,13 @@ class Ui_PSC_GUI(object):
     def setupUi(self, PSC_GUI):
         if not PSC_GUI.objectName():
             PSC_GUI.setObjectName(u"PSC_GUI")
-        PSC_GUI.resize(1080, 1080)
+        PSC_GUI.resize(1080, 600)
         sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(PSC_GUI.sizePolicy().hasHeightForWidth())
         PSC_GUI.setSizePolicy(sizePolicy)
-        PSC_GUI.setMaximumSize(QSize(1080, 1080))
+        PSC_GUI.setMaximumSize(QSize(1080, 600))
         self.centralwidget = QWidget(PSC_GUI)
         self.centralwidget.setObjectName(u"centralwidget")
         sizePolicy.setHeightForWidth(self.centralwidget.sizePolicy().hasHeightForWidth())
@@ -125,7 +125,7 @@ class Ui_PSC_GUI(object):
 
         self.pandas_table = QTableView(self.centralwidget)
         self.pandas_table.setObjectName(u"pandas_table")
-        self.pandas_table.setGeometry(QRect(260, 90, 811, 981))
+        self.pandas_table.setGeometry(QRect(260, 90, 811, 501))
         self.pandas_table.setSortingEnabled(True)
         self.pandas_table.horizontalHeader().setProperty("showSortIndicator", False)
         self.pandas_table.verticalHeader().setProperty("showSortIndicator", False)

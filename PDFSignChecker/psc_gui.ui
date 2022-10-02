@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1080</width>
-    <height>1080</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,7 +19,7 @@
   <property name="maximumSize">
    <size>
     <width>1080</width>
-    <height>1080</height>
+    <height>600</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -214,7 +214,7 @@
       <x>260</x>
       <y>90</y>
       <width>811</width>
-      <height>981</height>
+      <height>501</height>
      </rect>
     </property>
     <property name="sortingEnabled">
